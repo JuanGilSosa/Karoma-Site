@@ -1,0 +1,9 @@
+body{
+    background-image: url("assets/img/te.jpg");
+}
+
+.container{
+    color:white;
+    margin-top: 30px;
+    background: rgba(50, 50, 50, 0.4);
+}

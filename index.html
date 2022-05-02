@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="es" ng-app="App">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karoma Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Karoma Sitio </title>
+
     <!-- Font Awesome -->
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <!-- MDB -->
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
-        rel="stylesheet"
-    />
-    <!-- MDB -->
-    <script
-        type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" type="text/Javascript"></script>
-    <!-- <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script> -->
-    <script src="app.controller.js"></script>
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
     
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- AngularJS 1.8.2 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="app.controller.js"></script>
+
 </head>
+
 <body>
-    <div ng-controller="my">
-        <div class="container">
-            <h3>AngularJS Activo</h3>
-            <button style="background:#E8D7BC;" class="btn btn-success">ENTRAR</button>
-            <button class="btn btn-danger">Eliminar</button>
-            <button class="btn btn-warning">Editar</button>
-            <button class="btn btn-info">Ver</button>
-            <button class="btn btn-primary">Contacos</button>
-        </div>
+    
+    <div ng-controller="mainController" class="container col-lg-4 text-center">
+        <form>
+            <h3>Iniciar Sesión</h3>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+                        <label class="form-check-label" for="form2Example34"> Remember me </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Logearse</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>Not a member? <a href="#!">Register</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                </button>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
 angular.module("App", [])
-    .controller("my", function($scope){
+    .controller("mainController", function($scope){
         $scope.nombre = "Alicia";
     });
