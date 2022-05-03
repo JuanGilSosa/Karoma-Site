@@ -1,9 +1,39 @@
+*{
+    margin:0px;
+    padding: 0px;
+    
+}
 body{
+    font-family: 'Bodoni';
     background-image: url("assets/img/te.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
-.container{
-    color:white;
-    margin-top: 30px;
-    background: rgba(50, 50, 50, 0.4);
+#mainDiv{
+    width: 100%;
+    height: 600px;
+}
+
+#cont{
+    width: 100%;
+    height: 1000px;
+    background-color: #B8AEA4;
+    opacity: 0.8;
+}
+
+#cont h1{
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-size:1000%;
+    color: white;
+}
+
+.navbar{
+    font-family: sans-serif;
+}
+
+footer{
+    font-family: sans-serif;
 }
