@@ -32,26 +32,53 @@
 <body>
 
     <div ng-controller="mainController">
-        <!-- Navbar -->
-        <nav class=" navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand mt-2 mt-lg-0" id="myLogo" href="#">
+                <img src="assets/img/logo.ico" height="40" alt="MDB Logo" loading="lazy" />
+            </a>
             <!-- Container wrapper -->
             <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
                 <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                        <img src="assets/img/logo.ico" height="40" alt="MDB Logo" loading="lazy" />
-                    </a>
+                <div class="collapse navbar-collapse" id="navbarRightAlignExample">
                     <!-- Left links -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#fondo-1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#div-2">Info</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Tienda</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contactos</a>
+                        <!-- Navbar dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-mdb-toggle="dropdown" aria-expanded="false">
+                                Contactos
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">What's App</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     <!-- Left links -->
@@ -60,14 +87,59 @@
             </div>
             <!-- Container wrapper -->
         </nav>
-        <!-- Navbar -->
 
         <div id="mainDiv">
 
         </div>
-        <div id="cont">
-            <h1>KAROMA HOME</h1>
+        <div id="fondo-1">
+            <div id="cont" class="text-center">
+                <h1>KAROMA HOME</h1>
+                <button class="btn btn-outline-dark btn-lg" id="r-more">Leer más</button>
+            </div>
         </div>
+
+        <div class="d-flex justify-content-center text-center" id="div-2">
+            <div class="container">
+                <div class="row">
+                    <h3 class="p-4">Más informacion de mí</h3>
+                    <div>
+                        <hr>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci id molestiae suscipit
+                            magni
+                            omnis numquam ullam, nobis repellendus laudantium voluptatum, aspernatur enim. Aperiam vel
+                            libero excepturi vitae illum quasi ullam. Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ad itaque laudantium debitis rem dolorem incidunt nesciunt. Temporibus vero doloribus
+                            iste, exercitationem excepturi eaque soluta amet nisi voluptate quod? Quae, temporibus!</p>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-md-4"></div>
+                    <div class="col-lg-4 card text-center">
+                        <div class="card-header">Featured</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted">2 days ago</div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fondo-2">
+            <div id="cont" class="text-center">
+                <button class="fw-bold btn btn-outline-dark btn-lg">IR A MI TIENDA <i
+                        class="ri-arrow-right-line"></i></button>
+            </div>
+        </div>
+
 
         <!-- Footer -->
         <footer class="text-center text-lg-start bg-dark text-white">
@@ -103,10 +175,10 @@
                             <h6 class="text-uppercase fw-bold mb-4">
                                 ¿Por qué Karoma?
                             </h6>
-                                <p>
-                                    Soy una diosa y amo lo que hago uwu
-                                </p>
-                            <p> 
+                            <p>
+                                Soy una diosa y amo lo que hago uwu
+                            </p>
+                            <p>
                                 Página principal del karoma home
                                 Página principal del karoma home
                                 Página principal del karoma home
@@ -163,7 +235,7 @@
                             <h6 class="text-uppercase fw-bold mb-4">
                                 Contactos
                             </h6>
-                            
+
                             <p>
                                 <i class="fas fa-envelope me-3"></i>
                                 karomahomels@gmail.com
@@ -185,7 +257,7 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer -->
-        
+
         <!-- Footer -->
     </div>
 </body>
