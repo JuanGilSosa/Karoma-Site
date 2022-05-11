@@ -1,7 +1,7 @@
 *{
     margin:0px;
     padding: 0px;
-    
+    overflow-x: hidden;
 }
 body{
     font-family: 'Bodoni';
@@ -9,12 +9,16 @@ body{
 }
 
 /******** ETIQUETAS ********/
-#cont h1{
+#fondo-1 div h1{
     text-shadow: 0 0 5px black;
     text-align: center;
     font-size:800%;
     color: white;
     padding-top: 18%;
+}
+
+#fondo-1 div h2{
+    font-size: 250%;
 }
 
 footer{
@@ -36,7 +40,6 @@ hr{
 }
 
 
-
 /********  DIV ********/
 
 #fondo-1{
@@ -47,26 +50,15 @@ hr{
     height:1000px;
 }
 
-#fondo-1 .cont{
-    height: 1000px;
-}
-
 #fondo-2{
     background-image: url("assets/img/camara.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
-
-#cont{
-    width: 100%;
-    height: auto;
-    background-color: #B8AEA4; 
-    opacity: 0.8;
-}
  
  #div-2{
-     background-color: #DADADA;
+     background-color: #f3f3f3;
  }
 
 
