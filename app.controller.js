@@ -3,7 +3,7 @@ angular.module("App", [])
     
 function mainController ($scope) {
 
-    $scope.dir = 'assets/img/';
+    $scope.dir = 'assets/img/in_use/';
     // Debe actualizarse cuando se agregan nuevas fotos que seran usadas en las tarjetas
     $scope.cards = [
         {
@@ -40,5 +40,5 @@ function mainController ($scope) {
 
     $scope.velasyescencia = 'El proceso de selección de una pieza contenedora y su perfumees único, cada vela es vertida a mano. Con materias primas de excelente calidad';
     $scope.homespray = 'Aromatizador de ambiente/textil, esta formulado con un alto porcentaje de fragancia de perfumeria fina, que te va a asegurar un aroma intenso y duradero.';
-    $scope.salesbanio = 'Proceso de sales de baño';
+    $scope.salesbanio = 'Para un baño refrescante y relajante, ';
 }

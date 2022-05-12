@@ -1,7 +1,6 @@
 *{
     margin:0px;
     padding: 0px;
-    overflow-x: hidden;
 }
 body{
     font-family: 'Bodoni';
@@ -39,11 +38,15 @@ hr{
     right: 0;
 }
 
+#t-cuestion{
+    text-shadow: 0 0 5px black;
+}
+
 
 /********  DIV ********/
 
 #fondo-1{
-    background-image: url("assets/img/te.jpg");
+    background-image: url("assets/img/in_use/te.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -51,16 +54,24 @@ hr{
 }
 
 #fondo-2{
-    background-image: url("assets/img/camara.jpg");
+    background-image: url("assets/img/in_use/camara.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
  
+#fondo-3{
+    background-image: url("assets/img/in_use/fondo-3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
  #div-2{
      background-color: #f3f3f3;
  }
-
+ 
+ 
 
 /******** BOTONES ********/
 #r-more{
