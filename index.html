@@ -24,6 +24,9 @@
     <!-- MDB -->
     <script type="text/javascript" src="assets/js/mdb.min.js"></script>
 
+    <!-- jquery 3.4.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+
     <!-- Custom scripts -->
     <script type="text/javascript" src="app.controller.js"></script>
 
@@ -89,10 +92,15 @@
         </nav>
         <div>
             <div id="fondo-1">
-                <div class="text-center" style="width: 100%; height: auto;">
+                <div class="text-center">
                     <h1>KAROMA HOME</h1>
-                    <h2> Excelente calidad y precios accesibles </h2>
-                    <a class="btn btn-outline-dark btn-lg" id="r-more" href="#div-2">Leer más</a>
+                    <div class="container">
+                        <hr style="height: 4px; color:black; opacity: 0.6;">
+                    </div>
+                    <h2> {{Ctrl.subtitle}} </h2>
+                    <a class="css-button-sliding-to-left--black" id="r-more" href="#div-2">
+                        Leer más
+                    </a>
                 </div>
             </div>
 

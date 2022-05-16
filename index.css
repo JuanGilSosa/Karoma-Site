@@ -1,35 +1,39 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     font-family: 'Bodoni';
-    
+
 }
 
 /******** ETIQUETAS ********/
-#fondo-1 div h1{
+#fondo-1 div h1 {
     text-shadow: 0 0 5px black;
     text-align: center;
-    font-size:800%;
+    font-size: 800%;
     color: white;
     padding-top: 18%;
 }
 
-#fondo-1 div h2{
+#fondo-1 div h2 {
     font-size: 250%;
+    font-family: 'Crimson Text' sans-serif;
+    font-style: italic;
+    font-weight: bold;
 }
 
-footer{
+footer {
     font-family: sans-serif;
 }
 
-hr{
+hr {
     margin-top: 0;
     padding-top: 0;
 }
 
-.navbar{
+.navbar {
     z-index: 1100;
     position: fixed;
     font-family: sans-serif;
@@ -38,81 +42,85 @@ hr{
     right: 0;
 }
 
-#t-cuestion{
+#t-cuestion {
     text-shadow: 0 0 5px black;
 }
 
 
 /********  DIV ********/
 
-#fondo-1{
+#fondo-1 {
     background-image: url("assets/img/in_use/te.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    height:1000px;
+    height: 1000px;
 }
 
-#fondo-2{
+#fondo-2 {
     background-image: url("assets/img/in_use/camara.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
- 
-#fondo-3{
+
+#fondo-3 {
     background-image: url("assets/img/in_use/fondo-3.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
 
- #div-2{
-     background-color: #f3f3f3;
- }
- 
- 
+#div-2 {
+    background-color: #f3f3f3;
+}
+
+
 
 /******** BOTONES ********/
-#r-more{
+#r-more {
     font-weight: bold;
 }
 
-.cta{
-    align-items: center;
-    color: #fff;
-    border: none;
-    background:none;
-    padding: 12px 18px;
+.css-button-sliding-to-left--black {
+    min-width: 150px;
+    height: 40px;
+    color: transparent;
+    padding: 5px 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
     position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+    height: 100%;
 }
 
-.cta:before{
+.css-button-sliding-to-left--black:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-left--black:hover:after {
+    width: 100%;
+}
+
+.css-button-sliding-to-left--black:after {
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(calc(100% + 4px));
-    width: 0px;
-    height: 45px;
-    background: black;
-    transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
     z-index: -1;
-}
-.cta:hover::before{
-    width: 100%;
-    transform: translateY(-50%) translateX(-18px);
-    transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
-}
-.cta i{
-    margin-left: 5px;
-    transition: transform .2s .4s cubic-bezier(0, 0, .5, 2);
-}
-.cta:hover i{
-    transform: translateX(3px);
-}
-
-.card .w-card{
-    height: 30px;
+    transition: all 0.6s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
 }
 
 
@@ -120,8 +128,8 @@ hr{
         MEDIA QUERIES
 *****************************/
 
-@media(max-width: 991px){
-    #myLogo{
+@media(max-width: 991px) {
+    #myLogo {
         display: none;
     }
 }
