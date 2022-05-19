@@ -61,11 +61,11 @@ function mainController ($scope, $interval) {
         },
         {
             file: 'c.jpeg',        
-            description: '', 
+            description: 'Velas con protector de madera, para su protección luego de ser apagada, asi no se ensucia', 
             title: 'Velas'},
         {
             file: 'd.jpeg',        
-            description: '', 
+            description: 'Velas con protector de madera, para su protección luego de ser apagada, asi no se ensucia', 
             title: 'Velas'
         },
 

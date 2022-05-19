@@ -35,7 +35,11 @@
 <body>
 
     <div ng-controller="mainController as Ctrl">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a href="#top" class="btn btn-flotante"> <i class="fa-solid fa-arrow-turn-up"></i> </a>
+        <!-- Boton flotante que envia al top -->
+
+        <nav id="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand mt-2 mt-lg-0" id="myLogo" href="#">
                 <img src="assets/img/logo.ico" height="40" alt="MDB Logo" loading="lazy" />
             </a>
@@ -166,18 +170,27 @@
             </div>
 
             <!-- TARJETAS -->
-            <div class="row row-cols-1 row-cols-md-5 g-4 m-3">
-                <div class=""><h1 class="mt-5"> Siempre los clientes quedan conformes con la selección de productos</h1></div>
-                <div class="col" ng-repeat="card in cards">
-                    <div class="card h-100 w-2 border border-dark mb-3">
-                        <img src={{dir+card.file}} height="500" class="card-img-top" alt="Cargando..." />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">{{card.title}}</h5>
-                            <p class="card-text">
-                                {{card.description}}
-                            </p>
+            <div id="the-cards" class="container">
+                <div class="text-center">
+                    <h1 class="mt-5"> Siempre los clientes quedan conformes con la selección de productos</h1>
+                </div>
+                <div class="">
+                    <div class="col m-2" ng-repeat="card in cards">
+                        <div class="container-fluid">
+                            <div class="my-card">
+                                <div class="image">
+                                    <img src={{dir+card.file}} alt="Cargando..." />
+                                </div>
+                                <div class="details">
+                                    <div class="center">
+                                        <h1>{{card.title}}<br><span>team leader</span></h1>
+                                        <p>{{card.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                
                 </div>
             </div>
 
