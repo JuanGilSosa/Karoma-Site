@@ -152,15 +152,17 @@ hr {
 }
 
 /******** TARJETAS ********/
-.back{
-    
+.back-g{
+    background: #DDDEDB;
+}
+.back-w{
+    background: white;
 }
 
 .my-card {
     transform: translate(0%,0%);
     width: 360px;
     height: 400px;
-    background: #000;
 }
 .my-card .image {
     width: 100%;
@@ -214,6 +216,12 @@ hr {
     margin: 10px 0;
     padding: 0;
     color: #262626;
+}
+
+.my-card-title {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20%;
 }
 
 
