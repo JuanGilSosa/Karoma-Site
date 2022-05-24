@@ -47,6 +47,11 @@ hr {
 
 
 /********  DIV ********/
+.flex-container{
+    display:flex;
+    flex-direction: row;
+}
+
 
 #fondo-1 {
     background-image: url("assets/img/in_use/te.jpg");
@@ -236,6 +241,10 @@ hr {
 }
 
 @media(max-width:720px){
+    .flex-container{
+        flex-direction: column;
+    }  
+    
     #fondo-1 div h1{
         text-shadow: 0 0 5px black;
         color: white;
