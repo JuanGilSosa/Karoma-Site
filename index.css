@@ -234,3 +234,59 @@ hr {
         display: none;
     }
 }
+
+@media(max-width:720px){
+    #fondo-1 div h1{
+        text-shadow: 0 0 5px black;
+        color: white;
+    }
+    #fondo-1 {
+        background-image: url("assets/img/in_use/d-720px.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 800px;
+    }
+
+    #fondo-2 {
+        background-image: url("assets/img/in_use/camara.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    #fondo-3 {
+        background-image: url("assets/img/in_use/fondo-3.jpeg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    
+
+    .css-button-sliding-to-left--black {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 300px;
+        
+    }
+
+    .css-button-sliding-to-left--black:hover {
+        color: #fff;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

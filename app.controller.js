@@ -2,7 +2,7 @@
     'use-strict';
 
 angular.module("App", [])
-.directive('app', [() => {
+.directive('app', [function() {
     return {
         restrict: 'E',
         templateUrl: 'index.html'
