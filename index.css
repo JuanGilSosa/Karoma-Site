@@ -286,9 +286,12 @@ hr {
 }
 
 @media(max-width: 450px) {
-
+    body{
+        background-color: #f3f3f3;
+    }
     #fondo-1 div h1 {
-        font-size: 450%;
+        
+        font-size: 540%;
     }
     #fondo-1 div h2 {
         font-size: 200%;
