@@ -274,9 +274,8 @@ hr {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        height: 70px;
+        height: 50px;
         width: 300px;
-        
     }
 
     .css-button-sliding-to-left--black:hover {
@@ -286,6 +285,15 @@ hr {
     
 }
 
+@media(max-width: 450px) {
+
+    #fondo-1 div h1 {
+        font-size: 450%;
+    }
+    #fondo-1 div h2 {
+        font-size: 200%;
+    }
+}
 
 
 
