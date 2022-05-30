@@ -56,9 +56,9 @@ hr {
 #fondo-1 {
     background-image: url("assets/img/in_use/te.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-attachment: fixed;
-    height: 1000px;
+    height: 1050px;
 }
 
 #fondo-2 {
@@ -69,10 +69,11 @@ hr {
 }
 
 #fondo-3 {
-    background-image: url("assets/img/in_use/fondo-3.jpeg");
+    background-image: url("assets/img/in_use/fondo-3-cel-marron.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    background-position: bottom;
     width: 100%; 
     height: 400px;
 }
@@ -235,6 +236,43 @@ hr {
         MEDIA QUERIES
 *****************************/
 
+
+@media(max-width: 1777px){
+    body{
+        background-color: #f3f3f3;
+    }
+    #fondo-1{
+        background-size: 130%;
+    }
+    #fondo-1 div h1 {
+        
+        font-size: 540%;
+    }
+    #fondo-1 div h2 {
+        font-size: 200%;
+    }
+    #fondo-3{
+        background-position: bottom;
+        background-size: 150%;
+        background-attachment: fixed;
+    }
+    #fondo-3{
+        background-size:120%;
+    }
+    @media(max-width: 1480px){
+        #fondo-3{
+            background-size:140%;
+        }
+        @media(max-width:1259px){
+            #fondo-3{
+                background-size:160%;
+            }
+        }
+        
+    }
+}
+
+
 @media(max-width: 991px) {
     #myLogo {
         display: none;
@@ -263,14 +301,6 @@ hr {
         background-size: 100%;
         background-attachment: fixed;
     }
-
-    #fondo-3 {
-        background-image: url("assets/img/in_use/fondo-3.jpeg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-    }
-    
 
     .css-button-sliding-to-left--black {
         display: inline-flex;
@@ -302,14 +332,10 @@ hr {
         font-size: 200%;
     }
     #fondo-3{
-        background-image: url("assets/img/in_use/fondo-3-cel.jpeg");
-        background-repeat: no-repeat;
         background-position: bottom;
         background-size: 150%;
-        background-attachment: fixed;
     }
 }
-
 
 
 
