@@ -174,150 +174,213 @@
                 <div class="text-center">
                     <h2 class="mt-5 mb-5 "> ¡ Que ofrecemos ! </h2>
                 </div>
+                <!-- CARD 1 -->
                 <div class="">
-                    <div class="col m-2" ng-repeat="card in cards">
-                        <div class="{{(card.j_content == 'justify-content-start') ? 'my-card-title' : 'position-absolute mt-3'}}">
-                            <h3><b>Titulo para una buena visión</b></h3>
-                            <p class="fs-5 d-flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint veniam eveniet dolorem <br> animi assumenda consectetur deleniti, aut iure natus! Dicta laborum consectetur blanditiis <br> nam eum eius magni expedita sequi!</p>
-                        </div>
-                        <div class="d-flex {{card.j_content}} {{card.background}}">
+                    <div class="col m-2">
+
+                        <div class="d-flex justify-content-end">
                             <div class="my-card p-2">
                                 <div class="image">
-                                    <img src={{dir+card.file}} alt="Cargando..." />
+                                    <img src={{dir+cards[0].file}} alt="Cargando..." />
                                 </div>
                                 <div class="details">
                                     <div class="center">
-                                        <h1>{{card.title}}<br><span>team leader</span></h1>
-                                        <p>{{card.description}}</p>
+                                        <h1>{{cards[0].title}}<br><span>team leader</span></h1>
+                                        <p>{{cards[0].description}}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
-                
+                </div><!-- Fin Card 1 -->
+
+                <!-- CARD 2-->
+                <div class="bg-light d-flex flex-row-reverse">
+                    <div class="col m-2">
+
+                        <div class="position-absolute" id="card-title-bg-grey">
+                            <h1>
+                                {{cards[1].title}}
+                            </h1>
+                        </div>
+                        <div class="d-flex">
+                            <div class="my-card p-2">
+                                <div class="image">
+                                    <img src={{dir+cards[1].file}} alt="Cargando..." />
+                                </div>
+                                <div class="details">
+                                    <div class="center">
+                                        <h1>{{cards[1].title}}<br><span>team leader</span></h1>
+                                        <p>{{cards[1].description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Fin Card 2 -->
+                </div>
+                <!-- CARD 3-->
+                <div>
+                    <div class="col m-2">
+
+                        <div class="d-flex justify-content-end">
+                            <div class="my-card p-2">
+                                <div class="image">
+                                    <img src={{dir+cards[2].file}} alt="Cargando..." />
+                                </div>
+                                <div class="details">
+                                    <div class="center">
+                                        <h1>{{cards[2].title}}<br><span>team leader</span></h1>
+                                        <p>{{cards[2].description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Fin Card 3 -->
+                </div>
+                <!-- CARD 4 -->
+                <div class="bg-light">
+                    <div class="col m-2">
+                        <div class="position-absolute" id="card-title-bg-grey">
+                            <h1>{{cards[3].title}}</h1>
+                        </div>
+                        <div class="d-flex">
+                            <div class="my-card p-2">
+                                <div class="image">
+                                    <img src={{dir+cards[3].file}} alt="Cargando..." />
+                                </div>
+                                <div class="details">
+                                    <div class="center">
+                                        <h1>{{cards[3].title}}<br><span>team leader</span></h1>
+                                        <p>{{cards[3].description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Fin Card 4 -->
+
                 </div>
             </div>
 
-            <!-- Footer -->
-            <footer class="text-center text-lg-start bg-dark text-white">
-                <!-- Section: Social media -->
-                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                    <!-- Right -->
-                    <div class="container text-center">
-                        <a href="https://www.instagram.com/karoma.home/" class="btn btn-outline-light btn-floating m-1">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="btn btn-outline-light btn-floating m-1">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.instagram.com/karoma.home/" class="btn btn-outline-light btn-floating m-1">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                    <!-- Right -->
-                </section>
-                <!-- Section: Social media -->
 
-                <!-- Section: Links  -->
-                <section class="">
-                    <div class="container text-center text-md-start mt-5">
-                        <!-- Grid row -->
-                        <div class="row mt-3">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                                <!-- Content -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    <i class="fas fa-gem me-3"></i>Karoma Home
-                                </h6>
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    ¿Por qué Karoma?
-                                </h6>
-                                <p>
-                                    Soy una diosa y amo lo que hago uwu
-                                </p>
-                                <p>
-                                    Página principal del karoma home
-                                    Página principal del karoma home
-                                    Página principal del karoma home
-                                    Página principal del karoma home
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Productos
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Velas de soja</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Difusor Ambiental</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Home Spray</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Body Spalsh</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Useful links
-                                </h6>
-                                <p>
-                                    <a href="#!" class="text-reset">Pricing</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Settings</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Orders</a>
-                                </p>
-                                <p>
-                                    <a href="#!" class="text-reset">Help</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <!-- Links -->
-                                <h6 class="text-uppercase fw-bold mb-4">
-                                    Contactos
-                                </h6>
-
-                                <p>
-                                    <i class="fas fa-envelope me-3"></i>
-                                    karomahomels@gmail.com
-                                </p>
-                                <p><i class="fas fa-phone me-3"></i> +54 9 223 4 396 498</p>
-                            </div>
-                            <!-- Grid column -->
-                        </div>
-                        <!-- Grid row -->
-                    </div>
-                </section>
-                <!-- Section: Links  -->
-
-                <!-- Copyright -->
-                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                    © 2022 Copyright:
-                    <a class="text-reset fw-bold" href="">Karomahome.com.ar</a>
+        </div> <!-- Div Container Fluid-->
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-white">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Right -->
+                <div class="container text-center">
+                    <a href="https://www.facebook.com/karomahome" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/karoma.home/" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
 
-            <!-- Footer -->
-        </div>
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Karoma Home
+                            </h6>
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                ¿Por qué Karoma?
+                            </h6>
+                            <p>
+                                Soy una diosa y amo lo que hago uwu
+                            </p>
+                            <p>
+                                Página principal del karoma home
+                                Página principal del karoma home
+                                Página principal del karoma home
+                                Página principal del karoma home
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Productos
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Velas de soja</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Difusor Ambiental</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Home Spray</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Body Spalsh</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Contactos
+                            </h6>
+
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                karomahomels@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> +54 9 223 4 396 498</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold" href="">Karomahome.com.ar</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div> <!-- Main Controller -->
 </body>
 
 </html>
