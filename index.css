@@ -86,6 +86,13 @@ hr {
     margin-left: 400px;
 }
 
+#bar-red{
+    background: red;
+    height: 300px;
+}
+
+
+
 
 /******** BOTONES ********/
 #r-more {
