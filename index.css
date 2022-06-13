@@ -86,11 +86,18 @@ hr {
     margin-left: 400px;
 }
 
-#bar-red{
-    background: red;
-    height: 300px;
+#bar-beig{
+    background: #C0A290;
+    height: 950px;
+    
 }
 
+#data-product{
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 750px;
+}
 
 
 
