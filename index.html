@@ -108,6 +108,28 @@
                 </div>
             </div>
 
+            <div class="d-flex row nosotros"> <!-- Nosotros... -->
+                
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">  
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                           <h1><strong>SOBRE NOSOTROS</strong></h1>
+                        </div>
+                        <div class="fs-4">
+                            Ademas de ofrecer diversidad de productos, somos un grupo
+                            totalmente sociable y responsable para un resultado positivo a la satisfacción de nuestros clientes.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid" 
+                         src="assets/img/in_use/vela-nosotros4x5.jpeg" 
+                         alt="Cargando...">
+                </div>
+
+            </div> <!-- fin Nosotros... -->
+
             <div class="d-flex justify-content-center text-center" id="div-2">
                 <div class="container">
                     <div class="row">
@@ -168,102 +190,21 @@
                     </div>
                 </div>
             </div>
-
-            <!-- TARJETAS -->
-            <div id="the-cards" class="container">
-                <div class="text-center">
-                    <h2 class="mt-5 mb-5 "> ¡ Que ofrecemos ! </h2>
-                </div>
-                <!-- CARD 1 -->
-                <div class="">
-                    <div class="col m-2">
-
-                        <div class="d-flex justify-content-end">
-                            <div class="my-card p-2">
-                                <div class="image">
-                                    <img src={{dir+cards[0].file}} alt="Cargando..." />
-                                </div>
-                                <div class="details">
-                                    <div class="center">
-                                        <h1>{{cards[0].title}}<br><span>team leader</span></h1>
-                                        <p>{{cards[0].description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+            <div class="row">
+                <div class="my-card p-2" ng-repeat="card in cards">
+                    <div class="image">
+                        <img src={{dir+card.file}} alt="Cargando..." />
                     </div>
-                </div><!-- Fin Card 1 -->
-
-                <!-- CARD 2-->
-                <div class="bg-light d-flex flex-row-reverse">
-                    <div class="col m-2">
-
-                        <div class="position-absolute" id="card-title-bg-grey">
-                            <h1>
-                                {{cards[1].title}}
-                            </h1>
+                    <div class="details">
+                        <div class="center">
+                            <h1>{{card.title}}<br><span>karom home</span></h1>
+                            <p>{{card.description}}</p>
                         </div>
-                        <div class="d-flex">
-                            <div class="my-card p-2">
-                                <div class="image">
-                                    <img src={{dir+cards[1].file}} alt="Cargando..." />
-                                </div>
-                                <div class="details">
-                                    <div class="center">
-                                        <h1>{{cards[1].title}}<br><span>team leader</span></h1>
-                                        <p>{{cards[1].description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- Fin Card 2 -->
-                </div>
-                <!-- CARD 3-->
-                <div>
-                    <div class="col m-2">
-
-                        <div class="d-flex justify-content-end">
-                            <div class="my-card p-2">
-                                <div class="image">
-                                    <img src={{dir+cards[2].file}} alt="Cargando..." />
-                                </div>
-                                <div class="details">
-                                    <div class="center">
-                                        <h1>{{cards[2].title}}<br><span>team leader</span></h1>
-                                        <p>{{cards[2].description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- Fin Card 3 -->
-                </div>
-                <!-- CARD 4 -->
-                <div class="bg-light">
-                    <div class="col m-2">
-                        <div class="position-absolute" id="card-title-bg-grey">
-                            <h1>{{cards[3].title}}</h1>
-                        </div>
-                        <div class="d-flex">
-                            <div class="my-card p-2">
-                                <div class="image">
-                                    <img src={{dir+cards[3].file}} alt="Cargando..." />
-                                </div>
-                                <div class="details">
-                                    <div class="center">
-                                        <h1>{{cards[3].title}}<br><span>team leader</span></h1>
-                                        <p>{{cards[3].description}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- Fin Card 4 -->
-
+                    </div>
                 </div>
             </div>
-
-
         </div> <!-- Div Container Fluid-->
+
         <!-- Footer -->
         <footer class="text-center text-lg-start bg-dark text-white">
             <!-- Section: Social media -->
