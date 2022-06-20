@@ -99,11 +99,13 @@ hr {
     height: 750px;
 }
 
-
-
 /******** BOTONES ********/
 #r-more {
     font-weight: bold;
+}
+
+.nosotros{
+    background-color:#e9e2d2;
 }
 
 .css-button-sliding-to-left--black {
