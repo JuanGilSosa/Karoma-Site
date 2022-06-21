@@ -1,10 +1,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 body {
     font-family: 'Bodoni';
+    
 
 }
 
@@ -58,7 +60,8 @@ hr {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    height: 1000px;
+    width: 100%; 
+    height: 1050px;
 }
 
 #fondo-2 {
@@ -69,10 +72,11 @@ hr {
 }
 
 #fondo-3 {
-    background-image: url("assets/img/in_use/fondo-3.jpeg");
+    background-image: url("assets/img/in_use/fondo-3-cel-marron.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    background-position: bottom;
     width: 100%; 
     height: 400px;
 }
@@ -81,12 +85,38 @@ hr {
     background-color: #f3f3f3;
 }
 
+#card-title-bg-grey{
+    margin-left: 400px;
+}
 
+#bar-beig{
+    background: #C0A290;
+    height: 950px;
+    
+}
+
+#data-product{
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 750px;
+}
+
+.nosotros{
+    background-color:#e9e2d2;
+}
+/* COPY OF PURE ROW*/
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /******** BOTONES ********/
 #r-more {
     font-weight: bold;
 }
+
+
 
 .css-button-sliding-to-left--black {
     min-width: 150px;
@@ -167,7 +197,7 @@ hr {
 
 .my-card {
     transform: translate(0%,0%);
-    width: 360px;
+    width: 350px;
     height: 400px;
 }
 .my-card .image {
@@ -235,6 +265,44 @@ hr {
         MEDIA QUERIES
 *****************************/
 
+
+@media(max-width: 1777px){
+    body{
+        background-color: #f3f3f3;
+    }
+    #fondo-1{
+        background-size: 130%;
+        width: 100%; 
+    }
+    #fondo-1 div h1 {
+        
+        font-size: 540%;
+    }
+    #fondo-1 div h2 {
+        font-size: 200%;
+    }
+    #fondo-3{
+        background-position: bottom;
+        background-size: 150%;
+        background-attachment: fixed;
+    }
+    #fondo-3{
+        background-size:120%;
+    }
+    @media(max-width: 1480px){
+        #fondo-3{
+            background-size:140%;
+        }
+        @media(max-width:1259px){
+            #fondo-3{
+                background-size:160%;
+            }
+        }
+        
+    }
+}
+
+
 @media(max-width: 991px) {
     #myLogo {
         display: none;
@@ -255,6 +323,7 @@ hr {
         background-repeat: no-repeat;
         background-attachment: fixed;
         height: 800px;
+        width: 100%; 
     }
 
     #fondo-2 {
@@ -263,14 +332,6 @@ hr {
         background-size: 100%;
         background-attachment: fixed;
     }
-
-    #fondo-3 {
-        background-image: url("assets/img/in_use/fondo-3.jpeg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-    }
-    
 
     .css-button-sliding-to-left--black {
         display: inline-flex;
@@ -291,25 +352,18 @@ hr {
     body{
         background-color: #f3f3f3;
     }
-    #fondo-1{
-        background-size: 130%;
-    }
+
     #fondo-1 div h1 {
-        
         font-size: 540%;
     }
     #fondo-1 div h2 {
         font-size: 200%;
     }
     #fondo-3{
-        background-image: url("assets/img/in_use/fondo-3-cel.jpeg");
-        background-repeat: no-repeat;
         background-position: bottom;
         background-size: 150%;
-        background-attachment: fixed;
     }
 }
-
 
 
 

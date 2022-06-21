@@ -53,30 +53,32 @@ function mainController ($scope, $interval) {
             file: 'a.jpeg',        
             description: 'Vela abierta con pabilo de madera de bajo consumo, optimo para disfrutar del aroma por más tiempo', 
             title: 'Velas',
-            j_content: 'justify-content-start',
-            background: 'back-g',
         },
         {
-            file: 'b-sm.jpeg',     
+            file: 'vela-tres-pabilo.jpeg',     
             description: 'Velas con protector de madera, para su protección luego de ser apagada, asi no se ensucia', 
             title: 'Velas',
-            j_content: 'justify-content-end',
-            background: 'back-w'
         },
         {
             file: 'c.jpeg',        
             description: 'Velas con protector de madera, para su protección luego de ser apagada, asi no se ensucia', 
             title: 'Velas',
-            j_content: 'justify-content-start',
-            background: 'back-g',
         },
         {
             file: 'd.jpeg',        
             description: 'Velas con protector de madera, para su protección luego de ser apagada, asi no se ensucia', 
             title: 'Velas',
-            j_content: 'justify-content-end',
-            background: 'back-w',
         },
+        {
+            file:'vela-nosotros.jpeg',
+            description:'Velas con pabilo doble, generando una senacion de bienestar en el ambiene con la duabilidad absoluta',
+            title: 'Velas'
+        },
+        {
+            file:'velas.jfif',
+            description:'El pack de la escencia, tal que biene con un coso para hacer puf y su velita magica',
+            title: 'Velas'
+        }
 
     ];
     // --------------- Fin Imagenes --------------- // 
@@ -85,6 +87,19 @@ function mainController ($scope, $interval) {
     $scope.homespray = 'Aromatizador de ambiente/textil, esta formulado con un alto porcentaje de fragancia de perfumeria fina, que te va a asegurar un aroma intenso y duradero.';
     $scope.salesbanio = 'Para un baño refrescante y relajante, ';
     
+    // Controlador para cambiar de display sobre el id enviado, para no exceder width de pagina
+    (function(){
+        $(window).resize(() => {
+            var ancho = $(window).width(); 
+            if(ancho < 615 && !($('#d-nosotros').hasClass('d-block')) ){
+                $('#d-nosotros').removeClass('d-flex');
+                $('#d-nosotros').addClass('d-block');
+            }else if(ancho > 574){
+                $('#d-nosotros').addClass('d-flex');
+                $('#d-nosotros').removeClass('d-block');
+            }
+        });
+    })();
 
 } // Fin Controller 
 
