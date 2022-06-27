@@ -266,15 +266,9 @@ hr {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     list-style: none;
-    border-bottom: 0;
-  }
+}
   
-  .text.hidden {
-    border-bottom: 1px solid black;
-  }
-  
-  .text li {
-    
+.text li {
     float: left;
     font-weight: 700;
     font-size: 2em;
@@ -282,18 +276,18 @@ hr {
     opacity: 1;
     transition: all 1.5s ease-in-out;
     max-width: 2em;
-  }
-  .text.hidden li.spaced {
+}
+.text.hidden li.spaced {
     padding-left: 0;
-  }
-  .text li.spaced {
+}
+.text li.spaced {
     padding-left: 0.5em;
-  }
+}
   
-  .text.hidden li.ghost {
+.text.hidden li.ghost {
     opacity: 0;
     max-width: 0;
-  }
+}
   
 
 
@@ -334,10 +328,8 @@ hr {
                 background-size:160%;
             }
         }
-        
     }
 }
-
 
 @media(max-width: 991px) {
     #myLogo {

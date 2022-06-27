@@ -112,9 +112,9 @@
                 <!-- Nosotros... -->
 
                 <div class="col-lg-6 p-3 d-flex justify-content-center align-items-center">
-                    <div class="border-bottom">
+                    <div>
                         <div class="row text-center">
-                            <div class="d-flex col-md-12">
+                            <div ng-show="Ctrl.aboutUs" class="d-flex col-md-12">
                                 <ul class="text hidden fs-2">
                                     <li>S</li>
                                     <li class="ghost">O</li>
@@ -132,10 +132,16 @@
                                     <li class="ghost">S</li>
                                 </ul>
                             </div>
+                            <div class="d-flex justify-content-lg-between">
+                                <hr class="col-lg-3" style="color: black; height: 3px;">
+                                <hr class="col-lg-3" style="color: black; height: 3px;">
+                            </div>
                             <div class="fs-4">
-                                Ademas de ofrecer diversidad de productos, somos un grupo
-                                totalmente sociable y responsable para un resultado positivo a la satisfacción de
-                                nuestros clientes.
+                                <p class="px-5">
+                                    Ademas de ofrecer diversidad de productos, somos un grupo
+                                    totalmente sociable y responsable para un resultado positivo a la satisfacción de
+                                    nuestros clientes.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +237,7 @@
                     <a href="https://www.facebook.com/karomahome" class="btn btn-outline-light btn-floating m-1">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=2234396498&text&app_absent=0"
+                    <a href="https://api.whatsapp.com/send/?phone=2234396498&text&app_absent=1"
                         class="btn btn-outline-light btn-floating m-1">
                         <i class="fab fa-whatsapp"></i>
                     </a>
