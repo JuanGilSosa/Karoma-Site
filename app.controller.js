@@ -2,13 +2,6 @@
     'use-strict';
 
 angular.module("App", [])
-.directive('app', [function() {
-    return {
-        restrict: 'E',
-        templateUrl: 'index.html'
-    }
-}])
-
 .controller("mainController", mainController);
     
 function mainController ($scope, $interval) {
@@ -100,6 +93,19 @@ function mainController ($scope, $interval) {
             }
         });
     })();
+
+    $(function() {
+        var text = $(".text");
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll >= 500) {
+            text.removeClass("hidden");
+          } else{
+            text.addClass("hidden");
+          }
+        });
+      });
+      
 
 } // Fin Controller 
 
