@@ -108,13 +108,9 @@ function mainController ($scope, $interval) {
     });
       
     $scope.$watch('widthScope', () => {
-        console.log($scope.widthScope);
-        console.log("Watching...");
         if($scope.widthScope <= 1337){
-            console.log("<")
             self.aboutUs = false;
         }else if($scope.widthScope > 1337){
-            console.log(">")
             self.aboutUs = true;
         }
     });

@@ -393,6 +393,19 @@ hr {
     }
 }
 
+@media(max-width: 829px){
+    #fondo-1{
+        background-size: 230%;
+        width: 100%; 
+    }
+}
+
+@media(max-width: 880px){
+    #fondo-1{
+        background-size: 230%;
+        width: 100%; 
+    }
+}
 
 
 
